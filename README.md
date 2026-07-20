@@ -8,7 +8,7 @@ To format config files, you may need for `pnpm` to install & run formatter.
 
 ## Setup
 
-If you are use CLI environment, just run `make cli`.
+If you use CLI environment, just run `make cli`.
 For GUI environment, just run `make gui`.
 
 ## Third-Party Notices
