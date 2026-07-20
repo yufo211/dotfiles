@@ -1,0 +1,75 @@
+/**
+ * Zed settings
+ * https://zed.dev/docs/reference/all-settings
+ */
+{
+  "agent": {
+    "dock": "right",
+    "enable_feedback": false,
+    "sidebar_side": "right",
+  },
+  "auto_install_extensions": {
+    "material-icon-theme": true,
+    "monokai-pro-ce": true,
+    "solarized": false,
+  },
+  "buffer_font_family": "UDEV Gothic 35NF",
+  "buffer_font_size": 14,
+  "cli_default_open_behavior": "new_window",
+  "collaboration_panel": {
+    "button": false,
+    "default_width": 360,
+    "dock": "left",
+  },
+  "confirm_quit": true,
+  "diff_view_style": "split",
+  "format_on_save": "on",
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "git_panel": {
+    "default_width": 360,
+    "dock": "left",
+  },
+  "icon_theme": "Material Icon Theme",
+  "minimap": {
+    "show": "always",
+  },
+  "outline_panel": {
+    "default_width": 360,
+    "dock": "left",
+  },
+  "project_panel": {
+    "default_width": 360,
+    "dock": "left",
+  },
+  "restore_on_file_reopen": false,
+  "restore_on_startup": "launchpad",
+  "scrollbar": {
+    "git_diff": false,
+  },
+  "soft_wrap": "none",
+  "telemetry": {
+    "anthropic_retention": true,
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "theme": {
+    "dark": "Monokai Pro (CE)",
+    "light": "Solarized Light",
+    "mode": "dark",
+  },
+  "title_bar": {
+    "show_sign_in": false,
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+  },
+  "ui_font_family": "Noto Sans JP",
+  "ui_font_size": 16,
+  "ui_font_weight": 500,
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
+}

@@ -1,0 +1,62 @@
+/**
+ * Zed keymap
+ * https://zed.dev/docs/key-bindings
+ */
+[
+  {
+    "bindings": {
+      "cmd-t": "workspace::NewFile",
+    },
+    "context": "(Workspace && !Terminal)",
+  },
+  {
+    "bindings": {
+      "alt-cmd-o": [
+        "projects::OpenRemote",
+        {
+          "from_existing_connection": false,
+        },
+      ],
+    },
+    "context": "Workspace",
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-cmd-o": [
+        "projects::OpenRemote",
+        {
+          "from_existing_connection": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "alt-cmd-o": "projects::OpenRecent",
+    },
+  },
+  {
+    "bindings": {
+      "alt-cmd-shift-o": [
+        "projects::OpenRemote",
+        {
+          "from_existing_connection": true,
+        },
+      ],
+    },
+    "context": "Workspace",
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-cmd-shift-o": [
+        "projects::OpenRemote",
+        {
+          "from_existing_connection": true,
+        },
+      ],
+    },
+  },
+]

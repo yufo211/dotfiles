@@ -1,17 +1,12 @@
 # dotfiles
 
-## Install `Oh My Zsh`
+## Requirements
 
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-- My favotite theme: `ZSH_THEME="eastwood"`
+If you setup config files, use `make` command for setting symbolic links.
 
-## Error and solution
-### `compinit:527: no such file or directory: /usr/share/zsh/vendor-completions/_docker`
-add below line
-```
-plugins=(
-    docker
-)
-```
+To format config files, you may need for `pnpm` to install & run formatter.
+
+## Setup
+
+If you are use CLI environment, just run `make cli`.
+For GUI environment, just run `make gui`.

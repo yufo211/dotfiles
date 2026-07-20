@@ -1,0 +1,12 @@
+{
+  "name": "@dotfiles/zed",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Zed editor configuration",
+  "scripts": {
+    "lint": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.1"
+  }
+}

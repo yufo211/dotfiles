@@ -1,0 +1,10 @@
+/*
+!.github/
+!.gitignore
+!biome.json
+!keymap.json
+!package.json
+!pnpm-lock.yaml
+!README.md
+!settings.json
+node_modules/
