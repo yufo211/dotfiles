@@ -1,0 +1,3 @@
+# ghostty
+
+settings of Ghostty
