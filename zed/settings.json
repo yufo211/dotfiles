@@ -9,8 +9,8 @@
     "sidebar_side": "right",
   },
   "auto_install_extensions": {
-    "material-icon-theme": true,
-    "monokai-pro-ce": true,
+    "material-icon-theme": false,
+    "monokai-pro-ce": false,
     "solarized": false,
   },
   "buffer_font_family": "UDEV Gothic 35NF",
