@@ -6,11 +6,9 @@ on:
       - main
     paths:
       - "nvim/**"
-      - "nvim-pure/**"
   pull_request:
     paths:
       - "nvim/**"
-      - "nvim-pure/**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,13 +28,6 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # 7.0.1
 
       - name: format-nvim
-        uses: JohnnyMorganz/stylua-action@76fd70c03e6340ceaf673366712db9b20560b402 # v5.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: 2.1.0
-          args: --check nvim
-
-      - name: format-nvim-pure
         uses: JohnnyMorganz/stylua-action@76fd70c03e6340ceaf673366712db9b20560b402 # v5.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
