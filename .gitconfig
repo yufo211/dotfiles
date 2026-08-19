@@ -1,0 +1,10 @@
+[user]
+	name = yufo211
+	email = 95125392+yufo211@users.noreply.github.com
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA2mlKmaSFCAB07tWPDqBs+CiOWwiGDbsogEOIOaoZTg 95125392+yufo211@users.noreply.github.com
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

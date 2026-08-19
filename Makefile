@@ -1,12 +1,16 @@
 DOTFILES_DIR := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
 CONFIG_DIR   := $(HOME)/.config
 
-.PHONY: cli gui nvim tmux zed ghostty
+.PHONY: cli gui git nvim tmux zed ghostty
 
 all: cli
 
-cli: nvim tmux
+cli: git nvim tmux
 gui: cli zed ghostty
+
+git:
+	unlink $(HOME)/.gitconfig || true
+	ln -sfn $(DOTFILES_DIR)/.gitconfig $(HOME)/.gitconfig
 
 nvim:
 	mkdir -p $(CONFIG_DIR)
