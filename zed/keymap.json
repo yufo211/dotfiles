@@ -59,4 +59,10 @@
       ],
     },
   },
+  {
+    "bindings": {
+      "ctrl-u": "editor::DeleteToBeginningOfLine",
+    },
+    "context": "Editor",
+  },
 ]
