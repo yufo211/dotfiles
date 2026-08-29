@@ -1,15 +1,15 @@
 # dotfiles
 
-## Requirements
-
-If you setup config files, use `make` command for setting symbolic links.
-
-To format config files, you may need for `pnpm` to install & run formatter.
-
 ## Setup
 
-If you use CLI environment, just run `make cli`.
-For GUI environment, just run `make gui`.
+If you setup config files, use `make` command for setting symbolic links.
+See [Makefile](./Makefile).
+
+## Format config files
+
+- In `nvim`, use `stylua` to format lua files.
+- In `zed`, use `Biome` to format JSON files.
+  Just run `pnpm run lint`.
 
 ## Third-Party Notices
 

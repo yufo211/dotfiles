@@ -26,12 +26,11 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		{
-			"loctvl842/monokai-pro.nvim",
+			"dracula/vim",
 			lazy = false,
 			priority = 1000,
 			config = function()
-				require("monokai-pro").setup()
-				vim.cmd.colorscheme("monokai-pro")
+				vim.cmd.colorscheme("dracula")
 			end,
 		},
 		{
