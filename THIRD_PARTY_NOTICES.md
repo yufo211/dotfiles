@@ -1,23 +1,16 @@
 # Third-Party Notices
 
-## Kirlovon/monokai-ghostty
+## dracula/ghostty
 
-The following files are copied from [Kirlovon/monokai-ghostty](https://github.com/Kirlovon/monokai-ghostty) and are licensed under the MIT License.
+The following files are copied from [dracula/ghostty](https://github.com/dracula/ghostty) and are licensed under the MIT License.
 
-- `ghostty/themes/Monokai Classic`
-- `ghostty/themes/Monokai Pro`
-- `ghostty/themes/Monokai Pro Light`
-- `ghostty/themes/Monokai Pro Octagon`
-- `ghostty/themes/Monokai Pro Machine`
-- `ghostty/themes/Monokai Pro Ristretto`
-- `ghostty/themes/Monokai Pro Spectrum`
-- `ghostty/themes/Monokai Pro Light Sun`
+- `ghostty/themes/dracula`
 
 ### License
 
 MIT License
 
-Copyright (c) 2024 Kirills Reunovs
+Copyright (c) 2023 Dracula Theme
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
