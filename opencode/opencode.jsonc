@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "bash": {
+      "*": "allow",
+      "*.env*": "deny",
+      "git *": "allow",
+      "git push *": "ask",
+      "rm *": "ask",
+      "xargs": "ask",
+    },
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow",
+      "*.env.template": "allow",
+    },
+    "edit": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow",
+      "*.env.template": "allow",
+      "package.json": "ask",
+      "package-lock.json": "deny",
+      "pnpm-lock.yaml": "deny",
+      "pnpm-workspace.yaml": "ask",
+      "*.lock": "deny",
+      "Makefile": "ask",
+    },
+  },
+}
