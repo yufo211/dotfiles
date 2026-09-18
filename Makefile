@@ -16,7 +16,7 @@ nvim:
 
 tmux:
 	mkdir -p $(CONFIG_DIR)
-	unlink $(CONFIG_DIR)/tmux
+	unlink $(CONFIG_DIR)/tmux || true
 	ln -sfn $(DOTFILES_DIR)/tmux $(CONFIG_DIR)/tmux
 
 zed:
