@@ -2,8 +2,14 @@
   "name": "dotfiles",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "pnpm@11.15.0",
   "scripts": {
     "zed:lint": "pnpm -F @dotfiles/zed lint"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=12.16.1",
+      "onFail": "download"
+    }
   }
 }

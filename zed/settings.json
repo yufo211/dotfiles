@@ -6,7 +6,9 @@
   "agent": {
     "dock": "right",
     "enable_feedback": false,
-    "sidebar_side": "right",
+    "threads_sidebar": {
+      "position": "right",
+    },
   },
   "auto_install_extensions": {
     "material-icon-theme": false,
@@ -57,8 +59,8 @@
     "metrics": false,
   },
   "theme": {
-    "dark": "Dracula Solid",
-    "light": "Dracula",
+    "dark": "Monokai Pro (CE)",
+    "light": "Monokai Pro (CE)",
     "mode": "dark",
   },
   "title_bar": {
