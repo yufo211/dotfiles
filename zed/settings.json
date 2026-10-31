@@ -59,8 +59,8 @@
     "metrics": false,
   },
   "theme": {
-    "dark": "Dracula Solid",
-    "light": "Dracula",
+    "dark": "Monokai Pro (CE)",
+    "light": "Monokai Pro (CE)",
     "mode": "dark",
   },
   "title_bar": {
