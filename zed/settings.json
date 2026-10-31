@@ -6,7 +6,9 @@
   "agent": {
     "dock": "right",
     "enable_feedback": false,
-    "sidebar_side": "right",
+    "threads_sidebar": {
+      "position": "right",
+    },
   },
   "auto_install_extensions": {
     "material-icon-theme": false,
