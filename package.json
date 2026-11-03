@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "zed:lint": "pnpm -F @dotfiles/zed lint"
+    "lint": "pnpm -r run lint",
+    "format": "pnpm -r run format"
   },
   "devEngines": {
     "packageManager": {
