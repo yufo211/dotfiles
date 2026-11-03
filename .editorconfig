@@ -17,6 +17,6 @@ trim_trailing_whitespace = false
 [{*.lua,Makefile}]
 indent_style = tab
 
-# A glob with a slash matches only from this directory, so git/config cannot join the braces above
-[git/config]
+# A glob with a slash matches only from this directory, so these files cannot join the braces above
+[{git/config,.githooks/*}]
 indent_style = tab

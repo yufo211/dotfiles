@@ -8,9 +8,13 @@ define link
 	ln -sfn $(1) $(2)
 endef
 
-.PHONY: all $(CONFIG_TOOLS)
+.PHONY: all init $(CONFIG_TOOLS)
 
 all: $(CONFIG_TOOLS)
+
+# Git never takes hooks from a clone, so point this repository at the tracked .githooks
+init:
+	git -C $(DOTFILES_DIR) config core.hooksPath .githooks
 
 $(CONFIG_TOOLS):
 	mkdir -p $(CONFIG_DIR)

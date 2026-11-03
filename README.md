@@ -26,6 +26,8 @@ Copy them by hand when you need them.
 ## Lint and format
 
 Run `pnpm install` once before the pnpm commands.
+Run `make init` once to enable the `pre-commit` hook in `.githooks/`, which scans the staged changes with gitleaks.
+The hook only prints a warning when gitleaks is not installed.
 
 | Files                       | Tool                 | Check                 | Fix               |
 | --------------------------- | -------------------- | --------------------- | ----------------- |
@@ -37,3 +39,4 @@ CI runs every check in the table and the following checks as well.
 
 - actionlint for `.github/workflows/`
 - Syntax checks for `git/config`, `Makefile` and `tmux/tmux.conf`
+- shellcheck for `.githooks/`
