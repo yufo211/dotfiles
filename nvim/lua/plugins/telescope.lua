@@ -116,4 +116,10 @@ return {
 			},
 		}
 	end,
+	config = function(_, opts)
+		local telescope = require("telescope")
+		telescope.setup(opts)
+		-- makeのない環境ではfzf-nativeのビルドに失敗するため、読み込めなくてもTelescope自体は使えるようにする
+		pcall(telescope.load_extension, "fzf")
+	end,
 }
