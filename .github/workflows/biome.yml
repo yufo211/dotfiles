@@ -1,20 +1,10 @@
-name: Lint Zed configs
+name: Lint JSON, Markdown and YAML
 
 on:
   push:
     branches:
       - main
-    paths:
-      - "zed/**"
-      - "biome.json"
-      - "package.json"
-      - "pnpm-lock.yaml"
   pull_request:
-    paths:
-      - "zed/**"
-      - "biome.json"
-      - "package.json"
-      - "pnpm-lock.yaml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

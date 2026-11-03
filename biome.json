@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["*.json", "zed/*.json"]
+    "includes": ["*.json", "zed/*.json", "**/*.md", "**/*.yml", "**/*.yaml"]
   },
   "formatter": {
     "enabled": true,
