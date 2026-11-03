@@ -3,11 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "lint": "biome check .",
+    "lint": "biome check . && editorconfig-checker",
     "format": "biome check --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.4"
+    "@biomejs/biome": "2.6.4",
+    "editorconfig-checker": "7.0.0"
   },
   "devEngines": {
     "packageManager": {

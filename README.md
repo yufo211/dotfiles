@@ -27,12 +27,13 @@ Copy them by hand when you need them.
 
 Run `pnpm install` once before the pnpm commands.
 
-| Files                       | Tool   | Check                 | Fix               |
-| --------------------------- | ------ | --------------------- | ----------------- |
-| JSON, JSONC, Markdown, YAML | Biome  | `pnpm run lint`       | `pnpm run format` |
-| `nvim/**/*.lua`             | StyLua | `stylua --check nvim` | `stylua nvim`     |
+| Files                       | Tool                 | Check                 | Fix               |
+| --------------------------- | -------------------- | --------------------- | ----------------- |
+| JSON, JSONC, Markdown, YAML | Biome                | `pnpm run lint`       | `pnpm run format` |
+| `nvim/**/*.lua`             | StyLua               | `stylua --check nvim` | `stylua nvim`     |
+| All files                   | editorconfig-checker | `pnpm run lint`       | —                 |
 
-CI runs both checks and the following checks as well.
+CI runs every check in the table and the following checks as well.
 
 - actionlint for `.github/workflows/`
 - Syntax checks for `.gitconfig`, `Makefile` and `tmux/tmux.conf`

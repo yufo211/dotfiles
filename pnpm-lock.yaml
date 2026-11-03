@@ -169,6 +169,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.6.4
         version: 2.6.4
+      editorconfig-checker:
+        specifier: 7.0.0
+        version: 7.0.0
 
 packages:
 
@@ -241,6 +244,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  editorconfig-checker@7.0.0:
+    resolution: {integrity: sha512-bqTCyzjz6Qbah4hBO032mQiwGstrHL/jwsnlFvlqrDcpv8rv2pSgLo00Fnji1u6PGtSdY6uydzVLUdHupbpNBQ==}
+    engines: {node: '>=24.14.0'}
+    hasBin: true
+
 snapshots:
 
   '@biomejs/biome@2.6.4':
@@ -285,3 +293,5 @@ snapshots:
 
   '@biomejs/cli-win32-x64@2.6.4':
     optional: true
+
+  editorconfig-checker@7.0.0: {}
