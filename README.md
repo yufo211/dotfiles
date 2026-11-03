@@ -2,11 +2,34 @@
 
 ## Setup
 
-If you setup config files, use `make` command for setting symbolic links.
-See [Makefile](./Makefile).
+Run `make` to link every config below, or `make <target>` to link one of them.
+`make` stops with an error when the destination is a real file or directory, so move it away first.
 
-## Format config files
+| Target | Source | Destination |
+| --- | --- | --- |
+| `ghostty` | `ghostty/` | `~/.config/ghostty` |
+| `git` | `.gitconfig` | `~/.gitconfig` |
+| `nvim` | `nvim/` | `~/.config/nvim` |
+| `tmux` | `tmux/` | `~/.config/tmux` |
+| `zed` | `zed/` | `~/.config/zed` |
 
-- In `nvim`, use `stylua` to format lua files.
-- In `zed`, use `Biome` to format JSON files.
-  Just run `pnpm run lint`.
+## Templates
+
+`make` does not link these files.
+Copy them by hand when you need them.
+
+| Source | Copy to |
+| --- | --- |
+| `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
+| `opencode/` | `~/.config/opencode/` |
+
+## Lint and format
+
+Run `pnpm install` once before the pnpm commands.
+
+| Files | Tool | Check | Fix |
+| --- | --- | --- | --- |
+| `zed/*.json` | Biome | `pnpm run lint` | `pnpm run format` |
+| `nvim/**/*.lua` | StyLua | `stylua --check nvim` | `stylua nvim` |
+
+CI runs both checks and also lints `.github/workflows/` with actionlint.
