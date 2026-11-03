@@ -20,9 +20,6 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", { desc = "検索ハイ
 -- ターミナルの挿入モードからの離脱をESCに割り当てる
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "挿入モードから離脱" })
 
--- spaceを<leader>に割り当てる
-vim.g.mapleader = " "
-
 -- コマンドラインウィンドウがq:で表示されるのを無効化する
 vim.keymap.set("n", "q:", "<Nop>")
 
