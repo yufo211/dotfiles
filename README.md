@@ -27,9 +27,9 @@ Copy them by hand when you need them.
 
 Run `pnpm install` once before the pnpm commands.
 
-| Files                | Tool   | Check                 | Fix               |
-| -------------------- | ------ | --------------------- | ----------------- |
-| JSON, Markdown, YAML | Biome  | `pnpm run lint`       | `pnpm run format` |
-| `nvim/**/*.lua`      | StyLua | `stylua --check nvim` | `stylua nvim`     |
+| Files                       | Tool   | Check                 | Fix               |
+| --------------------------- | ------ | --------------------- | ----------------- |
+| JSON, JSONC, Markdown, YAML | Biome  | `pnpm run lint`       | `pnpm run format` |
+| `nvim/**/*.lua`             | StyLua | `stylua --check nvim` | `stylua nvim`     |
 
 CI runs both checks and also lints `.github/workflows/` with actionlint.

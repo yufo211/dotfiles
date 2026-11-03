@@ -6,7 +6,14 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["*.json", "zed/*.json", "**/*.md", "**/*.yml", "**/*.yaml"]
+    "includes": [
+      "*.json",
+      "zed/*.json",
+      "opencode/*.jsonc",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -21,14 +28,7 @@
   },
   "overrides": [
     {
-      "includes": ["zed/keymap.json", "zed/settings.json"],
-      "assist": {
-        "actions": {
-          "source": {
-            "useSortedKeys": "on"
-          }
-        }
-      },
+      "includes": ["zed/keymap.json", "zed/settings.json", "opencode/*.jsonc"],
       "json": {
         "formatter": {
           "trailingCommas": "all"
@@ -36,6 +36,16 @@
         "parser": {
           "allowComments": true,
           "allowTrailingCommas": true
+        }
+      }
+    },
+    {
+      "includes": ["zed/keymap.json", "zed/settings.json"],
+      "assist": {
+        "actions": {
+          "source": {
+            "useSortedKeys": "on"
+          }
         }
       }
     }
