@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["*.json"]
+    "includes": ["*.json", "zed/*.json"]
   },
   "formatter": {
     "enabled": true,
@@ -21,7 +21,7 @@
   },
   "overrides": [
     {
-      "includes": ["keymap.json", "settings.json"],
+      "includes": ["zed/keymap.json", "zed/settings.json"],
       "assist": {
         "actions": {
           "source": {

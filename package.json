@@ -3,8 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "lint": "pnpm -r run lint",
-    "format": "pnpm -r run format"
+    "lint": "biome check .",
+    "format": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4"
   },
   "devEngines": {
     "packageManager": {
