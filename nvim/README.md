@@ -1,3 +1,3 @@
 # nvim
 
-setting of Neovim with extensions by Lazy.vim
+settings of Neovim with plugins managed by lazy.nvim

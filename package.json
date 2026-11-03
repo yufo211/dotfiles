@@ -3,7 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "zed:lint": "pnpm -F @dotfiles/zed lint"
+    "lint": "biome check . && editorconfig-checker",
+    "format": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "editorconfig-checker": "7.0.0"
   },
   "devEngines": {
     "packageManager": {

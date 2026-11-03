@@ -1,12 +1,19 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.1/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["*.json"]
+    "includes": [
+      "*.json",
+      "zed/*.json",
+      "opencode/*.jsonc",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -21,17 +28,7 @@
   },
   "overrides": [
     {
-      "includes": ["keymap.json", "settings.json"],
-      "assist": {
-        "actions": {
-          "source": {
-            "useSortedKeys": "on"
-          }
-        }
-      },
-      "formatter": {
-        "trailingCommas": "all"
-      },
+      "includes": ["zed/keymap.json", "zed/settings.json", "opencode/*.jsonc"],
       "json": {
         "formatter": {
           "trailingCommas": "all"
@@ -39,6 +36,16 @@
         "parser": {
           "allowComments": true,
           "allowTrailingCommas": true
+        }
+      }
+    },
+    {
+      "includes": ["zed/keymap.json", "zed/settings.json"],
+      "assist": {
+        "actions": {
+          "source": {
+            "useSortedKeys": "on"
+          }
         }
       }
     }

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Warn instead of failing so that commits still work on machines without gitleaks
+if ! command -v gitleaks >/dev/null 2>&1; then
+	echo "warning: gitleaks is not installed, so the staged changes were not scanned for secrets" >&2
+	exit 0
+fi
+
+exec gitleaks git --pre-commit --staged --redact --no-banner --verbose
