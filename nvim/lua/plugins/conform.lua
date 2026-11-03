@@ -14,16 +14,8 @@ return {
 			typescript = { "prettier" },
 			yaml = { "prettier", "yamlfmt", stop_after_first = true },
 		},
+		-- 自前のBufWritePreのautocmdは使わない
+		-- lazy.nvimは遅延読み込みの直後にaugroup付きのautocmdしか再発火しないため、起動後最初の保存がフォーマットされない
+		format_on_save = {},
 	},
-	config = function(_, opts)
-		require("conform").setup(opts)
-
-		-- format on save autocmd
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*",
-			callback = function(args)
-				require("conform").format({ bufnr = args.buf })
-			end,
-		})
-	end,
 }
