@@ -32,4 +32,7 @@ Run `pnpm install` once before the pnpm commands.
 | JSON, JSONC, Markdown, YAML | Biome  | `pnpm run lint`       | `pnpm run format` |
 | `nvim/**/*.lua`             | StyLua | `stylua --check nvim` | `stylua nvim`     |
 
-CI runs both checks and also lints `.github/workflows/` with actionlint.
+CI runs both checks and the following checks as well.
+
+- actionlint for `.github/workflows/`
+- Syntax checks for `.gitconfig`, `Makefile` and `tmux/tmux.conf`

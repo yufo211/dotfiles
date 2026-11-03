@@ -1,0 +1,46 @@
+name: Check config syntax
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".gitconfig"
+      - "Makefile"
+      - "tmux/**"
+  pull_request:
+    paths:
+      - ".gitconfig"
+      - "Makefile"
+      - "tmux/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check .gitconfig
+        run: git config --file .gitconfig --list > /dev/null
+      # make -n only parses the Makefile, so run it against a throwaway HOME to also exercise the recipes
+      - name: Check Makefile
+        run: |
+          mkdir -p "$RUNNER_TEMP/home"
+          make all HOME="$RUNNER_TEMP/home"
+      - name: Install tmux
+        run: sudo apt-get update && sudo apt-get install -y tmux
+      # source-file -n skips option names and values, so source the file in a throwaway server instead
+      - name: Check tmux.conf
+        run: |
+          tmux -L ci -f /dev/null new-session -d
+          tmux -L ci source-file tmux/tmux.conf
