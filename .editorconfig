@@ -14,5 +14,9 @@ indent_size = 2
 [*.md]
 trim_trailing_whitespace = false
 
-[{*.lua,Makefile,.gitconfig}]
+[{*.lua,Makefile}]
+indent_style = tab
+
+# A glob with a slash matches only from this directory, so git/config cannot join the braces above
+[git/config]
 indent_style = tab

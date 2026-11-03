@@ -5,13 +5,13 @@
 Run `make` to link every config below, or `make <target>` to link one of them.
 `make` stops with an error when the destination is a real file or directory, so move it away first.
 
-| Target    | Source       | Destination         |
-| --------- | ------------ | ------------------- |
-| `ghostty` | `ghostty/`   | `~/.config/ghostty` |
-| `git`     | `.gitconfig` | `~/.gitconfig`      |
-| `nvim`    | `nvim/`      | `~/.config/nvim`    |
-| `tmux`    | `tmux/`      | `~/.config/tmux`    |
-| `zed`     | `zed/`       | `~/.config/zed`     |
+| Target    | Source     | Destination         |
+| --------- | ---------- | ------------------- |
+| `ghostty` | `ghostty/` | `~/.config/ghostty` |
+| `git`     | `git/`     | `~/.config/git`     |
+| `nvim`    | `nvim/`    | `~/.config/nvim`    |
+| `tmux`    | `tmux/`    | `~/.config/tmux`    |
+| `zed`     | `zed/`     | `~/.config/zed`     |
 
 ## Templates
 
@@ -36,4 +36,4 @@ Run `pnpm install` once before the pnpm commands.
 CI runs every check in the table and the following checks as well.
 
 - actionlint for `.github/workflows/`
-- Syntax checks for `.gitconfig`, `Makefile` and `tmux/tmux.conf`
+- Syntax checks for `git/config`, `Makefile` and `tmux/tmux.conf`
